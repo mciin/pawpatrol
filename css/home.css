@@ -5,7 +5,7 @@
 /* ---- Hero Banner ---- */
 .hero-banner {
   border-radius: 20px;
-  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  background: linear-gradient(135deg, #90b7e9, #e0f2fe);
   padding: 22px 18px;
   margin-bottom: 24px;
   display: flex;
@@ -46,8 +46,13 @@
 .hero-pets {
   font-size: 4rem;
   line-height: 1;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   filter: drop-shadow(2px 4px 8px rgba(0,0,0,.12));
+}
+
+.hero-pets img {
+  width: 140px;
+  height: auto;
 }
 
 /* ---- Category Grid ---- */
@@ -63,7 +68,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding: 14px 8px;
+  padding: 10px 4px;
   border-radius: 16px;
   cursor: pointer;
   transition: transform .2s, box-shadow .2s;
@@ -77,7 +82,10 @@
 .category-card[data-category="taxi"]     { background: #fef9c3; }
 .category-card[data-category="grooming"]{ background: #ede9fe; }
 
-.cat-icon { font-size: 1.6rem; }
+.cat-icon img { 
+  width: 24px; 
+  height: auto; 
+}
 
 .cat-label {
   font-size: .72rem;
