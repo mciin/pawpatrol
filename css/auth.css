@@ -41,7 +41,7 @@ body::before {
   pointer-events: none;
 }
 
-/* ---- Auth Card ---- */
+/* Auth Card */
 .auth-card {
   background: var(--white);
   border-radius: 28px;
@@ -58,7 +58,7 @@ body::before {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ---- Logo ---- */
+/* Logo */
 .auth-logo {
   display: flex;
   align-items: center;
@@ -79,7 +79,7 @@ body::before {
   letter-spacing: -.5px;
 }
 
-/* ---- Headline ---- */
+/* Headline */
 .form-title {
   font-size: 1.75rem;
   font-weight: 800;
@@ -100,7 +100,7 @@ body::before {
   line-height: 1.5;
 }
 
-/* ---- Social Buttons ---- */
+/* Social Buttons */
 .social-btns {
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@ body::before {
   flex-shrink: 0;
 }
 
-/* ---- Divider ---- */
+/* Divider */
 .divider {
   display: flex;
   align-items: center;
@@ -153,7 +153,7 @@ body::before {
   color: var(--gray-400);
 }
 
-/* ---- Input Fields ---- */
+/* Input Fields */
 .input-group {
   margin-bottom: 16px;
 }
@@ -208,7 +208,7 @@ body::before {
 
 .eye-toggle svg { width: 18px; height: 18px; }
 
-/* ---- Remember / Forgot ---- */
+/* remember/forgot */
 .form-row {
   display: flex;
   align-items: center;
@@ -242,7 +242,7 @@ body::before {
   font-weight: 600;
 }
 
-/* ---- Login Button ---- */
+/* Login Button */
 .login-btn {
   width: 100%;
   padding: 15px;
@@ -260,7 +260,6 @@ body::before {
 
 .login-btn:active { transform: translateY(0); }
 
-/* ---- Sign Up Link ---- */
 .signup-row {
   text-align: center;
   margin-top: 20px;
@@ -276,7 +275,6 @@ body::before {
 }
 
 
-/* ---- Responsive ---- */
 @media (max-width: 480px) {
   .auth-card { padding: 32px 22px; border-radius: 24px; }
   .form-title { font-size: 1.5rem; }

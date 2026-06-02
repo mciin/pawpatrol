@@ -1,8 +1,3 @@
-/* ===========================
-   PawPatrol – Search Page CSS
-   =========================== */
-
-/* ---- Page title block ---- */
 .search-hero {
   padding: 4px 0 16px;
 }
@@ -21,7 +16,6 @@
 
 .page-subtitle { font-size: .85rem; color: var(--gray-400); }
 
-/* ---- Filter Pills ---- */
 .filter-pills {
   display: flex;
   gap: 8px;
@@ -54,7 +48,7 @@
   box-shadow: 0 4px 12px rgba(59,130,246,.3);
 }
 
-/* ---- Location Card ---- */
+/* Location Card */
 .location-card {
   display: flex;
   align-items: center;
@@ -75,7 +69,7 @@
 
 .change-link { font-size: .8rem; font-weight: 600; color: var(--brand-blue); cursor: pointer; white-space: nowrap; }
 
-/* ---- Helpers vertical list ---- */
+/* Helpers vertical list */
 .helpers-list {
   display: flex;
   flex-direction: column;

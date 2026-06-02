@@ -1,8 +1,4 @@
-/* ===========================
-   PawPatrol – Profile Page CSS
-   =========================== */
-
-/* ---- Profile Header Banner ---- */
+/* Profile Header Banner */
 .profile-banner {
   height: 200px;
   background: linear-gradient(135deg, var(--peach) 0%, #fde0c8 40%, var(--lavender) 100%);
@@ -27,7 +23,7 @@
   display: block;
 }
 
-/* ---- User name ---- */
+/* User name */
 .profile-name {
   text-align: center;
   font-size: 1.15rem;
@@ -43,7 +39,7 @@
   margin-bottom: 28px;
 }
 
-/* ---- Menu Groups ---- */
+/* Menu Groups */
 .menu-group {
   margin-bottom: 16px;
   background: var(--white);
@@ -86,7 +82,7 @@
 .menu-arrow { color: var(--gray-300); }
 .menu-arrow svg { width: 16px; height: 16px; }
 
-/* ---- Logout Button ---- */
+/* Logout Button */
 .logout-btn {
   width: 100%;
   padding: 15px;

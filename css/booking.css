@@ -27,7 +27,7 @@
   box-shadow: var(--shadow-sm);
 }
 
-/* ---- Booking Panels ---- */
+/* Booking Panels */
 .booking-panel { 
   display: none; 
 }
@@ -38,7 +38,7 @@
   column; gap: 14px; 
 }
 
-/* ---- Booking Card ---- */
+/* Booking Card */
 .booking-card {
   border-radius: 18px;
   padding: 16px;
@@ -118,7 +118,7 @@
   object-fit: cover;
 }
 
-/* ---- Status Badge ---- */
+/* Status Badge */
 .status-badge {
   position: absolute;
   top: 14px;
@@ -139,7 +139,7 @@
   color: #15803d; 
 }
 
-/* ---- View Details Button ---- */
+/* View Details Button */
 .view-details-btn {
   width: 100%;
   padding: 10px;

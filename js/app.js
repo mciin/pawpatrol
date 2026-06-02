@@ -184,7 +184,6 @@ function initBooking() {
   const params = new URLSearchParams(window.location.search);
   const urlTab = params.get('tab');
   if (urlTab) {
-    // Only accept existing tab values
     const allowed = new Set(tabs.map(t => t.dataset.tab));
     if (allowed.has(urlTab)) setActiveTab(urlTab);
   }
@@ -226,7 +225,7 @@ function showModal(title) {
   modal.classList.add('open');
 }
 
-// ---------- Chat Page ----------
+// Chat Page
 function initChat() {
   if (!$('.chat-page')) return;
 
@@ -281,7 +280,23 @@ function openChatThread(item) {
   thread.classList.add('open');
 
   thread.querySelector('.thread-back').addEventListener('click', () => thread.classList.remove('open'));
-  // Remove unread badge
+
+  const sendBtn = thread.querySelector('.thread-send');
+  const inputEl = thread.querySelector('.thread-input');
+  function sendMsg() {
+    const text = inputEl.value.trim();
+    if (!text) return;
+    const msgs = $('#thread-msgs');
+    const div = document.createElement('div');
+    div.className = 'msg msg-out';
+    div.innerHTML = `<p>${text}</p><span class="msg-time">Now</span>`;
+    msgs.appendChild(div);
+    inputEl.value = '';
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+  sendBtn.addEventListener('click', sendMsg);
+  inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') sendMsg(); });
+
   const badge2 = item.querySelector('.unread-badge');
   if (badge2) badge2.remove();
 }
@@ -357,7 +372,7 @@ function initScrollReveal() {
   $$('.reveal').forEach(el => observer.observe(el));
 }
 
-// ---------- Taxi Confirm Page ----------
+//  Taxi Confirm Page 
 function initTaxiConfirm() {
   if (!$('.taxi-confirm-page')) return;
 
@@ -377,7 +392,7 @@ function initTaxiConfirm() {
   }
 }
 
-// ---------- Taxi Tracking Page ----------
+// Taxi Tracking Page 
 function initTaxiTracking() {
   if (!$('.taxi-tracking-page')) return;
 
@@ -419,7 +434,7 @@ function initTaxiTracking() {
     if (viewDetailsBtn) viewDetailsBtn.classList.add('show');
     const bannerImg = banner?.querySelector('img');
     if (bannerImg) bannerImg.src = '../assets/trip-complete.png';
-  }, 3000);
+  }, 2000);
 
   // CTA
   if (viewDetailsBtn) {
