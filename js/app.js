@@ -298,7 +298,6 @@ function openChatThread(item) {
   inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') sendMsg(); });
 
   const badge2 = item.querySelector('.unread-badge');
-  if (badge2) badge2.remove();
 }
 
 // Profile Page 
