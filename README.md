@@ -1,7 +1,7 @@
 # PawPatrol 
 This project was built as a **group assignment** for the **Human-Computer Interaction (HCI)** course, focusing on designing and implementing the **frontend** of the PawPatrol platform.
 
-The UI/UX design for this project was created using **Figma**, covering wireframes, mockups, and an interactive prototype of the PetCare Connect platform.
+The UI/UX design for this project was created using **Figma**, covering wireframes, mockups, and an interactive prototype of the PawPatrol platform.
 
 ---
  
